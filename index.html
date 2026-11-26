@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free prompts and files from my AI tests</title>
+<meta name="description" content="The exact prompts and every AI's output from my tests on YouTube. Run them in your browser and judge for yourself.">
+<style>
+  :root { --bg: #131417; --card: #1b1d22; --line: #2c2f36; --text: #f2f2f2; --muted: #9a9da5; --accent: #E8A35A; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "Helvetica Neue", -apple-system, Arial, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 28px 16px 48px; }
+  .label { color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 13px; }
+  h1 { font-size: clamp(28px, 7vw, 44px); margin: 8px 0 10px; line-height: 1.1; }
+  .lead { color: var(--muted); font-size: 16px; line-height: 1.55; margin: 0 0 24px; max-width: 60ch; }
+  .test { display: grid; grid-template-columns: 220px 1fr; gap: 18px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; margin-bottom: 14px; }
+  @media (max-width: 600px) { .test { grid-template-columns: 1fr; } }
+  .thumb img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 10px; background: #000; }
+  .meta { color: var(--muted); font-size: 13px; }
+  h2 { font-size: 22px; margin: 6px 0 6px; line-height: 1.2; }
+  .body p { color: var(--muted); margin: 0 0 14px; line-height: 1.5; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-block; padding: 11px 15px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 15px; }
+  .btn.primary { background: var(--accent); color: #131417; }
+  .btn.ghost { border: 1px solid var(--line); color: var(--text); }
+  .note { color: var(--muted); font-size: 14px; margin-top: 22px; }
+  .note a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="label">Free prompts and files</div>
+  <h1>My AI tests</h1>
+  <p class="lead">Every test from my videos: the exact prompt, what each AI made, and the files to run yourself. Newest first.</p>
+
+  <!-- Newest test first. For a new test, copy one <article> block and put it at the top. -->
+  <article class="test" id="christmas-tree">
+    <a class="thumb" href="https://vivekshingala.github.io/christmas-tree-ai-test/"><img src="thumbs/christmas-tree.jpg" alt="Four Christmas trees made by four AIs, labelled A to D" width="600" height="600"></a>
+    <div class="body">
+      <div class="meta">26 Nov 2026 · Claude, GPT, Gemini and DeepSeek</div>
+      <h2>Four AIs built a Christmas tree</h2>
+      <p>One prompt, one try each, no edits. Which one is Claude?</p>
+      <div class="actions">
+        <a class="btn primary" href="https://vivekshingala.github.io/christmas-tree-ai-test/">See all four trees</a>
+        <a class="btn ghost" href="https://vivekshingala.github.io/christmas-tree-ai-test/christmas-tree-blind-test.zip" download>Download the files (zip)</a>
+      </div>
+    </div>
+  </article>
+
+  <p class="note">From <a href="https://www.youtube.com/@VivekShingalaAI">Vivek Shingala | AI Automation</a> on YouTube.</p>
+</main>
+</body>
+</html>
